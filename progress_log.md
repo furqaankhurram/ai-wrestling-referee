@@ -39,4 +39,12 @@
 - Created remote GitHub repository
 - Linked local repo to GitHub and pushed first commit
 - Verified clean repo structure on GitHub
+
+## Day 4 – 2025-07-02
+
+- Fixed scoring_simulator.py to generate cumulative scores
+- Ran simulator to produce logs/scoring_log.csv with running totals
+- Plotted cumulative scoring timeline and saved it as logs/scoring_timeline_cumulative.png
+- Verified scores never reset to zero between moves
+- Prepared plan to add Red/Blue wrestler labels to annotations in next session
   
