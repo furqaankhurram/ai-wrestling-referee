@@ -62,12 +62,28 @@ output_dir = '../logs'
 os.makedirs(output_dir, exist_ok=True)
 output_file = os.path.join(output_dir, 'scoring_log.csv')
 
+# 📌 Build cumulative score timeline
+all_frames = sorted(frame_scores.keys())
+if not all_frames:
+    print("No scoring events found!")
+    exit()
+
+min_frame = min(all_frames)
+max_frame = max(all_frames)
+
+red_total = 0
+blue_total = 0
+
 with open(output_file, 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['frame', 'red_score', 'blue_score'])
-    for frame in sorted(frame_scores):
-        red = frame_scores[frame]['red']
-        blue = frame_scores[frame]['blue']
-        writer.writerow([frame, red, blue])
+
+    for frame in range(min_frame, max_frame + 1):
+        # Add points if this frame had an event
+        red_total += frame_scores[frame]['red']
+        blue_total += frame_scores[frame]['blue']
+
+        writer.writerow([frame, red_total, blue_total])
+
 
 print(f"✅ Scoring log written to: {output_file}")
