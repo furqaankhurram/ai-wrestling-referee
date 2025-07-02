@@ -1,0 +1,8 @@
+start_frame,end_frame,label
+33,44,step_out
+85,119,2pt_takedown
+164,178,turn
+183,198,turn
+202,211,turn
+236,250,turn
+950,960,2pt_takedown

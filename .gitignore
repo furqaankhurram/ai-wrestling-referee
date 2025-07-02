@@ -1,0 +1,20 @@
+# Python virtual environment
+.venv/
+
+# Extracted frames
+data/frames_day1/
+data/frames_day2/
+data/frames_throws/
+
+# Raw videos
+data/raw_videos/
+
+# Logs
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
