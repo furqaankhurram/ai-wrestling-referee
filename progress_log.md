@@ -33,3 +33,10 @@
 - Validated scoring events match labeled move segments
 - Noticed event log resets to 0 between moves (needs cumulative scoring later)
 - Next: Fix cumulative scoring, add Red/Blue labels, start SystemVerilog scoring module
+- Initialized local Git repository
+- Created .gitignore to exclude large frame and video data
+- Committed project structure, scripts, annotations, and logs
+- Created remote GitHub repository
+- Linked local repo to GitHub and pushed first commit
+- Verified clean repo structure on GitHub
+  
